@@ -21,7 +21,7 @@
 
 # Tribute_page
 
-A single page Tribute page website of Naruto uzamaki
+A single page Tribute page website of Naruto Uzumaki
 
 ## Tech Stack
 
