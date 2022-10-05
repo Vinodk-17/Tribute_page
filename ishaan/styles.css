@@ -1,12 +1,18 @@
 @font-face {
-    font-family: 'aot_title';
-    src: url(fonts/blowbrush.ttf);
+    font-family: aot_caption;
+    src: url(fonts/Morganite/Morganite-SemiBold.ttf)
 }
 
+@font-face {
+    font-family: aot_title;
+    src: url(fonts/lemon_milk/LEMONMILK-Medium.otf)
+}
+
+
 :root{
-    --primary:#0f0c2995;
-    --secondary:#302b6395; 
-    --ternary: #24243e95;
+    --primary:#0f0c29df;
+    --secondary:#302b63cb; 
+    --ternary: #24243ed4;
 }
 
 
@@ -21,8 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
-    font-family: big john;
+    font-weight: normal;
     width: 100%;
     padding-top: 40vh;
 }
@@ -32,31 +37,31 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-family: big john;
+    padding-bottom: 50px;
     width: 100%;
 }
 
 h2{
-    font-size: 80px;
-    color: black;
+    font-size: 120px;
     font-family: "aot_title",sans-serif;
-    letter-spacing: 10px;
-    -webkit-text-stroke-width: 2px;
+    letter-spacing: 0px;
     padding: 8px 24px;
-    color: ghostwhite;
+    color: white;
     
 }
 h3{
-    font-size: 30px;
-    font-family: 'Oxygen', sans-serif;
+    font-size: 80px;
+    font-family: 'aot_caption', sans-serif;
+    align-content: center;
+    justify-content: center;
     padding: 8px 24px;
-    color: ghostwhite;
+    color: white;
     
 }
 
 
 .default{
-    background-image:linear-gradient(135deg, var(--primary), var(--secondary), var(--ternary)), url(img/default.webp);
+    background-image:linear-gradient(135deg, var(--primary), var(--secondary), var(--ternary)), url(img/default.jpg);
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -75,6 +80,78 @@ h3{
 
 .ninth{
     background:linear-gradient(135deg, var(--primary), var(--secondary), var(--ternary)), url(img/ninth.jfif);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top:0;
+    height: 100vh;
+}
+
+.eighth{
+    background:linear-gradient(135deg, var(--primary), var(--secondary), var(--ternary)), url(img/jaw.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top:0;
+    height: 100vh;
+}
+
+.seventh{
+    background:linear-gradient(135deg, var(--primary), var(--secondary), var(--ternary)), url(img/colossal.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top:0;
+    height: 100vh;
+}
+
+.sixth{
+    background:linear-gradient(135deg, var(--primary), var(--secondary), var(--ternary)), url(img/female.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top:0;
+    height: 100vh;
+}
+
+.fifth{
+    background:linear-gradient(135deg, var(--primary), var(--secondary), var(--ternary)), url(img/war.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top:0;
+    height: 100vh;
+}
+
+.fourth{
+    background:linear-gradient(135deg, var(--primary), var(--secondary), var(--ternary)), url(img/beast.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top:0;
+    height: 100vh;
+}
+
+.third{
+    background:linear-gradient(135deg, var(--primary), var(--secondary), var(--ternary)), url(img/armored.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top:0;
+    height: 100vh;
+}
+
+
+.second{
+    background:linear-gradient(135deg, var(--primary), var(--secondary), var(--ternary)), url(img/attack.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top:0;
+    height: 100vh;
+}
+.founder{
+    background:linear-gradient(135deg, var(--primary), var(--secondary), var(--ternary)), url(img/founding.jpg);
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
