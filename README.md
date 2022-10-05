@@ -59,7 +59,10 @@ To contribute
 ## For additional questions:
 
 
-Contact me here for any doubt - 
+### 📫 &nbsp; How to reach me:
 
-* https://www.instagram.com/vinodkuril_17/?hl=en
-* https://www.linkedin.com/in/vinod-kuril-6398b5220/
+
+
+<a href="https://www.linkedin.com/in/vinod-kuril-6398b5220/"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=flat&logo=linkedin&logoColor=white"/></a> &nbsp;
+<a href="https://www.instagram.com/vinodkuril_17/?hl=en"><img src="https://img.shields.io/badge/-@vinodkuril_17-E4405F?style=flat&logo=Instagram&logoColor=white"/></a> &nbsp;
+<a href="mailto:kurilvinod9870@gmail.com"><img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" /></a> &nbsp;
