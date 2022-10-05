@@ -37,6 +37,7 @@ To contribute
 3. Then fork this repository.
 4. Do your changes 
 5. Make pull request and wait for review.
+6. Make sure you have entered your name in contributor folder as mentioned (It's your responsibility)
 
 
 
