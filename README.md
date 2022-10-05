@@ -43,16 +43,13 @@ To contribute
 
 * Create a file 
 * file name = yourname.json (yourname = put your name)
-* Then put your github username in your file
-
+* Append your details to  `contributors.json` file in the below format:
+```
+{
+    "github-username": "YOUR-GITHUB-USERNAME" 
+}
+```
 * for [example](https://github.com/Vinodk-17/Tribute_page/tree/main/contributors) 
-
-## format
-<pre> {
-  "github-username": "shashankrai2001"
- }
-
-</pre>
 
 
 
