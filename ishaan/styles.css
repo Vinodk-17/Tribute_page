@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'aot_title';
+    src: url(fonts/blowbrush.ttf);
+}
+
+:root{
+    --primary:#0f0c2995;
+    --secondary:#302b6395; 
+    --ternary: #24243e95;
+}
+
+
+*{
+    border:0;
+    padding:0;
+    margin:0;
+
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: big john;
+    width: 100%;
+    padding-top: 40vh;
+}
+
+#secondary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: big john;
+    width: 100%;
+}
+
+h2{
+    font-size: 80px;
+    color: black;
+    font-family: "aot_title",sans-serif;
+    letter-spacing: 10px;
+    -webkit-text-stroke-width: 2px;
+    padding: 8px 24px;
+    color: ghostwhite;
+    
+}
+h3{
+    font-size: 30px;
+    font-family: 'Oxygen', sans-serif;
+    padding: 8px 24px;
+    color: ghostwhite;
+    
+}
+
+
+.default{
+    background-image:linear-gradient(135deg, var(--primary), var(--secondary), var(--ternary)), url(img/default.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top:0;
+    height: 100vh;
+}
+
+.index{
+    background: linear-gradient(135deg, var(--primary), var(--secondary), var(--ternary)), url(./img/index.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top:0;
+    height: 100vh;
+}
+
+.ninth{
+    background:linear-gradient(135deg, var(--primary), var(--secondary), var(--ternary)), url(img/ninth.jfif);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top:0;
+    height: 100vh;
+}
