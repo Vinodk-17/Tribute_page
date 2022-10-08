@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Naruto Quiz</title>
+</head>
+<body>
+    
+    <main>
+        <!-- Start Quiz -->
+        <div class="start-quiz center">
+            <button class="start-quiz-btn pushable">
+                <span class="front">
+                    Start Quiz!
+                </span>
+            </button>
+        </div>
+
+        <!-- Info Box -->
+        <div class="wrapper-infoBox">
+            <div class="info-box center">
+                <div class="info-box-title">
+                    <h3>Some Rules of this Quiz *</h3>
+                </div>
+                <ul class="info-box-list">
+                    <li class="info-items">1. You will have only <span>15 seconds</span> to answer each question.</li>
+                    <li class="info-items">2. Once you select your answer, it can't be undone.</li>
+                    <li class="info-items">3. You can't select any option once time goes off.</li>
+                    <li class="info-items">4. You can't quit from the quiz while playing.</li>
+                    <li class="info-items">5. You will get points on the basis of your correct answers.</li>
+                </ul>
+                <div class="buttons flex-row my-1">
+                    <button class="btn outlined-btn exit">Exit Quiz</button>
+                    <button class="btn primary-btn continue">Continue</button>
+                </div>
+                <div class="kurama">
+                    <img src="/images/kurama.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Box -->
+        <div class="wrapper-quizBox">
+            <div class="quiz-box center">
+                <div class="quiz-box-header flex-between">
+                    <div class="quiz-box-header-text">
+                        Naruto Quiz
+                    </div>
+                    <div class="quiz-box-header-timer flex-row">
+                        <div class="timer-text">
+                            Time Left
+                        </div>
+                        <div class="timer-secs flex-center">
+                            15
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz-box-body">
+                    <div class="question-title">
+                        
+                    </div>
+                    <ul class="options-list">
+                        <li class="option">
+                            Gyuuki
+                        </li>
+                        <li class="option">
+                            Kurama
+                        </li>
+                        <li class="option">Choumei</li>
+                        <li class="option">Kyuubi</li>
+                    </ul>
+                </div>
+                <div class="quiz-box-footer flex-between">
+                    <div class="total-questions">
+                        
+                    </div>
+                    <button class="btn primary-btn next">Next Question</button>
+                </div>
+                <div class="kurama">
+                    <img src="/images/kurama.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Box -->
+        <div class="result-box center">
+            <div class="result-box-icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="result-box-text">
+                You've completed the Quiz! and...
+            </div>
+            <div class="result-box-score">
+                sorry 😐, you got only <span>2</span> out of <span>10</span>...
+            </div>
+            <div class="buttons flex-center">
+                <button class="btn primary-btn restart">Restart Quiz</button>
+                <button class="btn outlined-btn quit">Quit Quiz</button>
+            </div>
+            <div class="kurama">
+                <img src="/images/kurama.png" alt="">
+            </div>
+        </div>
+    </main>
+
+
+     <!-- Language Switcher -->
+     <div class="language-menu">
+        <div class="selected-lang my-1">
+            <i class="fas fa-globe"></i>
+           <a href="/index.html" style=" color: aliceblue; text-decoration:none"> <span >Back To Web-Page</span></a>
+        </div>
+       
+    </div>
+   
+
+    <!-- Github code -->
+    <div class="github">
+        <div class="code">
+            <a href="https://github.com/Vinodk-17/Tribute_page">
+                <i class="fas fa-code"></i>
+                <span>github</span>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="javascript/questions.js"></script>
+    <script src="javascript/main.js"></script>
+ 
+
+</body>
+</html>

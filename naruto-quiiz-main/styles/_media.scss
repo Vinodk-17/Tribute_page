@@ -1,0 +1,36 @@
+@media (max-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    html {
+        font-size: 11px;
+
+        .info-box-title {
+            font-size: 2.1rem;
+        }
+
+        .quiz-box-header-text {
+            font-size: 2.5rem;
+        }
+
+        .quiz-box-header-timer {
+            font-size: 1.1rem;
+        }
+    }
+}

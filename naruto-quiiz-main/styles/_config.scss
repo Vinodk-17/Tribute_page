@@ -1,0 +1,23 @@
+// Variables;
+$primary-color: #32a852;
+$white-color: #fff;
+
+// Margins & Paddings;
+$spaceAmounts: (1, 2, 3, 4, 5);
+@each $space in $spaceAmounts{
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+
+    .py-#{$space}{
+        padding: #{$space}rem 0;
+    }
+}

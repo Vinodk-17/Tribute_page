@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import 'config';
+@import 'reset';
+@import 'utilities';
+@import 'media';
+
+// Start Quiz Button;
+.start-quiz {
+    z-index: 0;
+    
+    &-btn {
+        background-color: #ccc;
+
+        .front {
+            padding: 1rem 2.5rem;
+            font-size: 2rem;
+            background-color: $white-color;
+            color: $primary-color;
+            font-weight: bold;
+            font-family: 'Waiting for the Sunrise', cursive;
+        }
+    }
+}
+
+// Info Box Styles;
+.info-box {
+    max-width: 40rem;
+    width: 90%;
+    background-color: $white-color;
+    padding: 2rem 2rem .5rem 2rem;
+    border-radius: .5rem;
+    box-shadow: .5rem .5rem .25rem #333;
+    opacity: 0;
+    visibility: hidden;
+
+    &-title {
+        font-size: 2.4rem;
+        font-family: 'Waiting for the Sunrise', cursive;
+    }
+
+    &-list {
+        font-size: 1.2rem;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        padding: .7rem 0;
+
+        li span {
+            color: $primary-color;
+            font-weight: 600;
+        }
+
+        li:first-letter {
+            font-weight: 600;
+        }
+    }
+
+    .buttons {
+        justify-content: flex-end;
+        gap: .6rem;
+
+        button {
+            padding: .7rem 1.5rem;
+        }
+    }
+}
+
+// Quiz Box Styles;
+.quiz-box {
+    background-color: $white-color;
+    max-width: 40rem;
+    width: 90%;
+    border-radius: .5rem;
+    box-shadow: .5rem .5rem .25rem #333;
+    opacity: 0;
+    visibility: hidden;
+
+    &-header {
+        width: 100%;
+        align-items: center;
+        padding: 0 2rem;
+        box-shadow: 0px 0px 0.12rem #333;
+
+        &-text {
+            font-size: 2.8rem;
+            font-weight: 600;
+            font-family: 'Waiting for the Sunrise', cursive;
+            letter-spacing: 0.18rem;
+        }
+
+        &-timer {
+            background-color: #555;
+            color: $white-color;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.2rem;
+            padding: 0 .7rem;
+            height: 2.8rem;
+            border-radius: .3rem;
+            pointer-events: none;
+
+            .timer-secs {
+                background-color: $primary-color;
+                width: 2rem;
+                height: 2rem;
+                border-radius: .3rem;
+            }
+        }
+    }
+
+    &-body, &-footer {
+        padding: 1rem 2rem;
+
+        .question-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .options-list {
+            width: 100%;
+            position: relative;
+
+            .option {
+                background-color: rgb(94, 245, 170);
+                margin: .7rem 0;
+                padding: .5rem 1rem;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+                transition: .2s ease-in-out;
+                font-size: 1.1rem;
+
+                &:hover {
+                    background-color:rgba(69, 182, 126, 0.788)
+                }
+
+                &.correct {
+                    background-color: springgreen;
+                    color: #23903c;
+                }
+
+                &.wrong {
+                    background-color:#ff3333;
+                    color: #a42834;
+                }
+
+                &.disabled {
+                    pointer-events: none;
+                }
+
+                &::first-letter {
+                    color: springgreen;
+                }
+
+                .icon {
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    border: 0.12rem solid transparent;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: .8rem;
+
+                    &.tick {
+                        color: #23903c;
+                        border-color: #23903c;
+                    }
+
+                    &.cross {
+                        color: #a42834;
+                        border-color: #a42834;
+                    }
+                }
+            }
+        }
+
+        .total-questions {
+            position: relative;
+            font-weight: bold;
+
+            span {
+                color: $primary-color;
+            }
+        }
+
+        .next {
+            padding: .7rem 1.3rem;
+            display: none;
+        }
+    }
+}
+
+// Result Box Styles;
+.result-box {
+    max-width: 35rem;
+    width: 90%;
+    padding: 3rem;
+    border-radius: .5rem;
+    background-color: $white-color;
+    box-shadow: .5rem .5rem .25rem #333;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+
+    &-icon {
+        font-size: 6rem;
+        color: $primary-color;
+        text-shadow: 0 0 .6rem $primary-color;
+    }
+
+    &-text {
+        font-size: 2rem;
+        letter-spacing: 0.12rem;
+        font-weight: bold;
+        font-family: 'Waiting for the Sunrise', cursive;
+    }
+
+    &-score {
+        font-size: 1.1rem;
+
+        span {
+            color: $primary-color;
+            font-weight: 600;
+        }
+    }
+
+    .buttons {
+        gap: .7rem;
+        margin-top: 2rem;
+
+        button {
+            padding: .7rem 1.7rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// Show hidden elements;
+.show {
+    opacity: 1;
+    visibility: visible;
+    transition: .8s;
+
+    .start-quiz {
+        display: none;
+    }
+}
+
+.wrapper-infoBox, .wrapper-quizBox {
+    min-height: 100vh;
+    overflow: hidden;
+
+    &.disabled {
+        display: none;
+        overflow: hidden;
+    }
+} 
+
+// Language Switcher;
+.language-menu {
+    position: absolute;
+    top: 3%;
+    left: 6%;
+
+    img {
+        width: 3rem;
+    }
+
+    i {
+        font-size: 2.5rem;
+    }
+
+    .selected-lang {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: #fff;
+        padding: .5rem 1rem;
+        background-color: #333;
+        cursor: pointer;
+    }
+
+    .language-list {
+        display: flex;
+        flex-direction: column;
+        transition: .3s;
+        background-color: #333;
+        opacity: 0;
+        visibility: hidden;
+
+        &.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .language {
+            padding: .5rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #fff;
+            cursor: pointer;
+            transition: .2s;
+
+            &:last-child {
+                border-top: 0.12rem solid $white-color;
+            }
+
+            &:hover {
+                background-color: #444;
+            }
+        }
+    }
+}
+
+// Github Code;
+.github {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+
+    .code {
+        background-color: #333;
+        padding: .5rem 2rem;
+        
+        &:hover {
+            background-color: #444;
+        }
+
+        a {
+            color: $white-color;
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+            text-decoration: none;
+        }
+    }
+}
