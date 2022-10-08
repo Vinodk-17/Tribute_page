@@ -1,0 +1,90 @@
+body, html {
+    min-height: 100vh;
+    background: $primary-color;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    touch-action: none;
+    margin: auto;
+    overflow: hidden;
+}
+
+// Buttons;
+.btn {
+    border-radius: .3rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: .4s;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.primary-btn {
+    background-color: $primary-color;
+    color: $white-color;
+
+    &:hover {
+        background-color: #2c8544;
+    }
+}
+
+.outlined-btn {
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    background-color: transparent;
+
+    &:hover {
+        background-color: $primary-color;
+        color: $white-color;
+    }
+}
+
+.pushable {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+
+    &:hover {
+        .front {transform: translateY(-2px);}
+    }
+}
+
+.front {
+    display: inline-block;
+    transform: translateY(-6px);
+}
+
+// Center elements;
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Flex classes;
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+// Kurama image;
+.kurama {
+    width: 10rem;
+    position: absolute;
+    top: -10.5rem;
+    right: -4.5rem;
+    pointer-events: none;
+}
