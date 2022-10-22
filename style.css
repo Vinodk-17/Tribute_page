@@ -62,9 +62,18 @@
   }
   
   /*Tribute info styles*/
+  .body {
+	padding: 10px;
+  }
   
   .naruto {
 	float: left;
+  }
+  .tribute,
+  .one,
+  .two, 
+  .tribute2 {
+	padding-right: 30px;
   }
   .tribute {
 	font-size: 1.7vw;
