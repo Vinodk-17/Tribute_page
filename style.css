@@ -1,5 +1,13 @@
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
 p{
+	font-family: 'Poppins', sans-serif;
+
 	text-align: justify;
+	font-weight: 100;
+	line-height: 40px;
 }
 
 @media screen and (max-width: 600px) {
@@ -25,7 +33,7 @@ p{
   }
   .arrow {
 	margin-top: 20px;
-	width: 80px;
+	width: 40px;
 	max-width: 92%;
   }
   .arrow:hover {
@@ -77,8 +85,9 @@ p{
   .two, 
   .tribute2 {
 	padding-right: 30px;
-  }
-  .tribute {
+}
+.tribute {
+	font-weight: 100;
 	font-size: 1.7vw;
 	font-family: "Raleway", sans-serif, bold;
   }
