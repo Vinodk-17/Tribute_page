@@ -1,5 +1,5 @@
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 p{
@@ -7,7 +7,7 @@ p{
 
 	text-align: justify;
 	font-weight: 100;
-	line-height: 40px;
+	line-height: 41px;
 }
 
 @media screen and (max-width: 600px) {
@@ -29,10 +29,10 @@ p{
 	background-position-y: 10%;
 	background-size: cover;
 	text-align: center;
-	border-radius: 5%;
+	border-radius: 6%;
   }
   .arrow {
-	margin-top: 20px;
+	margin-top: 30px;
 	width: 40px;
 	max-width: 92%;
   }
@@ -42,7 +42,7 @@ p{
   }
   
   .quote {
-	padding-bottom: 4vw;
+	padding-bottom: 4.5vw;
 	font-family: italic;
 	font-size: 3.5vw;
 	padding-left: 20px;
@@ -84,7 +84,7 @@ p{
   .one,
   .two, 
   .tribute2 {
-	padding-right: 30px;
+	padding-right: 29px;
 }
 .tribute {
 	font-weight: 100;
@@ -137,7 +137,7 @@ p{
   
   .naruto7th {
 	float: right;
-	padding-top: 80px;
+	padding-top: 79px;
   }
   .tribute3 {
 	padding-top: 100px;
@@ -150,21 +150,23 @@ p{
   
   #tribute-link {
 	font-size: 2.5vw;
-	font-family: "Raleway", sans-serif, bold;
+	/* font-family: "Raleway", sans-serif, bold; */
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   .link {
 	text-align: center;
 	padding-top: 120px;
 	font-size: 2.5vw;
-	font-family: "Raleway", sans-serif, bold;
+	/* font-family: "Raleway", sans-serif, bold; */
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   #image {
 	padding-top: 2vw;
 	max-width: 20%;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: auto 0;
+	margin-right: auto 0;
   }
   
   
